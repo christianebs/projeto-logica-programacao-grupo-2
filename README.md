@@ -2,7 +2,7 @@
 
 # ToDo List Ada Tech
 
-Aqui fica a descrição
+Projeto desenvolvido em JavaScript com base nos conceitos do módulo 1 de lógica de programação, consiste em uma aplicação de lista de tarefas (ToDo List). Permite ao usuário adicionar, editar e remover tarefas, além de listar todas as tarefas salvas de maneira organizada. A aplicação também oferece a funcionalidade de obter uma tarefa específica através de um parâmetro, como o ID, proporcionando uma experiência de gerenciamento eficiente e prático.
 
 ## 	:gear: Linguagens e Ferramentas
 
@@ -16,4 +16,16 @@ Aqui fica a descrição
 
 ## :card_file_box: Fucionalidades do Projeto
 
-- Funcionalidades
+- [ ] Adicionar uma tarefa
+- [ ] Editar uma tarefa salva
+- [ ] Remover uma tarefa salva
+- [ ] Listar todas as tarefas salvas
+- [ ] Obter uma tarefa, através de um parâmetro (id)
+
+## :woman_technologist: :man_technologist: Grupo 2
+
+- Bruno Souza
+- Christiane Barbosa
+- João Marcos
+- Maríilia Oliveira
+- Patrick farias
