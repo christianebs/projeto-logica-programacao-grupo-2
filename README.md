@@ -27,5 +27,5 @@ Projeto desenvolvido em JavaScript com base nos conceitos do módulo 1 de lógic
 - Bruno Souza
 - Christiane Barbosa
 - João Marcos
-- Maríilia Oliveira
+- Marília Oliveira
 - Patrick farias
