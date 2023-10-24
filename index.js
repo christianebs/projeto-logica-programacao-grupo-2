@@ -1,15 +1,15 @@
 let prompt = require('prompt-sync')();
 
 let tarefas = [];
-
-adicionarTarefa();
 function adicionarTarefa() {
-    let tarefa = prompt('Digite uma tarefa a ser adicionada na lista: ');
-    if (tarefa) {
+    const tarefa = prompt('Digite uma tarefa a ser adicionada na lista: ');
+    if (tarefas.includes(tarefa)) {
+        console.log('\nEssa tarefa já existe na lista.');
+    } else if (tarefa) {
         tarefas.push(tarefa);
         console.log('\nA tarefa foi adicionada à lista com sucesso!');
     } else {
-        console.log('\nO texto digitado não é válido.')
+        console.log('\nO texto digitado não é válido.');
     }
 }
 
@@ -26,6 +26,22 @@ function editarTarefa() {
         const tarefaEditada = prompt('Digite a nova descrição da tarefa: ');
         tarefas[indexDaTarefa] = tarefaEditada;
         console.log('\nTarefa editada com sucesso!');
+    } else {
+        console.log("\nTarefa não encontrada, verifique o número da tarefa digitado.");
+    }
+}
+
+function removerTarefa() {
+    listarTarefas();
+    if (tarefas.length === 0) {
+        console.log("\nNenhuma tarefa disponível para remoção. Que tal adicionar uma tarefa?");
+        return;
+    }
+    console.log("");
+    const indexDaTarefa = parseInt(prompt('Digite o número da tarefa que deseja remover: ')) - 1;
+    if (indexDaTarefa >= 0 && indexDaTarefa < tarefas.length) {
+        tarefas.splice(indexDaTarefa, 1);
+        console.log('\nTarefa removida com sucesso!');
     } else {
         console.log("\nTarefa não encontrada, verifique o número da tarefa digitado.");
     }
@@ -110,5 +126,8 @@ function menu() {
       }
   }
 }
-
+console.log('')
+console.log('ToDo List Grupo 2')
+console.log('');
+adicionarTarefa();
 menu();
