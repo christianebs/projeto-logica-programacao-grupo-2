@@ -31,6 +31,17 @@ function editarTarefa() {
     }
 }
 
+function listarTarefas() {
+    if (tarefas.length > 0) {
+        console.log('\nA lista de tarefas atual é:');
+        tarefas.forEach((tarefa, index) => {
+            console.log(`${index + 1}. ${tarefa}`);
+        });
+    } else {
+        console.log('\nA lista de tarefas está vazia no momento, que tal adicionar uma tarefa?');
+    }
+}
+
 function reiniciarPrograma() {
   tarefas = [];
   console.log('\nReiniciando o programa...');
