@@ -96,7 +96,7 @@ function menu() {
               listarTarefas();
               break;
           case 5:
-              obterTarefaPorId();
+              obterId();
               break;
           case 6:
               reiniciarPrograma();
