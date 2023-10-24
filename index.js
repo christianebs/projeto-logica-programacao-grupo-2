@@ -13,7 +13,23 @@ function adicionarTarefa() {
     }
 }
 
-
+function editarTarefa() {
+    if (tarefas.length === 0) {
+        console.log("\nNenhuma tarefa disponível para edição. Que tal adicionar uma tarefa?");
+        return;
+    }
+    listarTarefas();
+    console.log("");
+    const indexDaTarefa = parseInt(prompt('Digite o número da tarefa que deseja editar: ')) - 1;
+    if (indexDaTarefa >= 0 && indexDaTarefa < tarefas.length) {
+        console.log("");
+        const tarefaEditada = prompt('Digite a nova descrição da tarefa: ');
+        tarefas[indexDaTarefa] = tarefaEditada;
+        console.log('\nTarefa editada com sucesso!');
+    } else {
+        console.log("\nTarefa não encontrada, verifique o número da tarefa digitado.");
+    }
+}
 
 function reiniciarPrograma() {
   tarefas = [];
