@@ -2,7 +2,7 @@
 
 # ToDo List Ada Tech
 
-Este é um programa de ToDo List em JavaScript que permite que você gerencie suas tarefas diretamente no prompt de comando usando a biblioteca "prompt". Ele oferece funcionalidades básicas, como adicionar, editar, remover, listar tarefas e obter uma tarefa por ID.
+Projeto desenvolvido em JavaScript com base nos conceitos do módulo 1 de lógica de programação, consiste em uma aplicação de lista de tarefas (ToDo List). Permite ao usuário, através da biblioteca "prompt", adicionar, editar e remover tarefas, além de listar todas as tarefas salvas de maneira organizada. A aplicação também oferece a funcionalidade de obter uma tarefa específica através de um parâmetro, como o ID, proporcionando uma experiência de gerenciamento eficiente e prático.
 
 ## 	:gear: Linguagens e Ferramentas
 
@@ -22,15 +22,20 @@ Este é um programa de ToDo List em JavaScript que permite que você gerencie su
 - [ ] Listar todas as tarefas salvas
 - [ ] Obter uma tarefa, através de um parâmetro (id)
 
-## Instalação
+## :computer: Rodando o Projeto
 
-1. Clone ou faça o download deste repositório para o seu sistema.
-2. Abra um terminal e navegue até o diretório onde o código está localizado.
-3. Instale as dependências usando o npm (Node Package Manager) com o seguinte comando: npm i prompt-sync
+```shell
+# 1. Faça o download deste repositório para o seu sistema ou clone o projeto
 
-## Pré-requisitos
+git clone https://github.com/christianebs/projeto-logica-programacao-grupo-2
 
-Antes de executar o programa, certifique-se de que você tenha o Node.js instalado em seu sistema. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
+# 2. Instale o pacote prompt-sync
+
+npm install prompt-sync
+```
+Observações:
+
+- Antes de executar o programa, certifique-se de que você tenha o Node.js instalado em seu sistema. Você pode baixá-lo em nodejs.org.
 
 ## :woman_technologist: :man_technologist: Grupo 2
 
