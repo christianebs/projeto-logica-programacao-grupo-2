@@ -42,6 +42,25 @@ function listarTarefas() {
     }
 }
 
+function obterId (){
+    if (tarefas.length === 0) {
+        console.log("\nNenhuma tarefa disponível para visualização. Que tal adicionar uma tarefa?");
+        return;
+    }
+
+    listarTarefas();
+    console.log("");
+    const indexDaTarefa = parseInt(prompt('Digite o número da tarefa que você quer ver: ')) - 1;
+
+    if (indexDaTarefa >= 0 && indexDaTarefa < tarefas.length) {
+        console.log('A tarefa solicitada é:');
+        console.log(`${tarefas[indexDaTarefa]}`);
+    } else {
+        console.log("\nTarefa não encontrada, verifique o número da tarefa digitado.");
+    }
+
+}
+
 function reiniciarPrograma() {
   tarefas = [];
   console.log('\nReiniciando o programa...');
