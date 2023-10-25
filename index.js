@@ -3,10 +3,11 @@ let prompt = require('prompt-sync')();
 let tarefas = [];
 function adicionarTarefa() {
     const tarefa = prompt('Digite uma tarefa a ser adicionada na lista: ');
-    if (tarefas.includes(tarefa)) {
+    const tarefaCapitalizada = tarefa.charAt(0).toUpperCase()+tarefa.slice(1).toLowerCase();
+    if (tarefas.includes(tarefaCapitalizada)) {
         console.log('\nEssa tarefa já existe na lista.');
-    } else if (tarefa) {
-        tarefas.push(tarefa);
+    } else if (tarefaCapitalizada) {
+        tarefas.push(tarefaCapitalizada);
         console.log('\nA tarefa foi adicionada à lista com sucesso!');
     } else {
         console.log('\nO texto digitado não é válido.');
