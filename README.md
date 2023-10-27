@@ -16,11 +16,11 @@ Projeto desenvolvido em JavaScript com base nos conceitos do módulo 1 de lógic
 
 ## :card_file_box: Fucionalidades do Projeto
 
-- [ ] Adicionar uma tarefa
-- [ ] Editar uma tarefa salva
-- [ ] Remover uma tarefa salva
-- [ ] Listar todas as tarefas salvas
-- [ ] Obter uma tarefa, através de um parâmetro (id)
+- [x] Adicionar uma tarefa
+- [x] Editar uma tarefa salva
+- [x] Remover uma tarefa salva
+- [x] Listar todas as tarefas salvas
+- [x] Obter uma tarefa, através de um parâmetro (id)
 
 ## :computer: Rodando o Projeto
 
