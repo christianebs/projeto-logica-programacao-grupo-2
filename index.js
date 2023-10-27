@@ -1,6 +1,7 @@
-let prompt = require('prompt-sync')();
+const prompt = require('prompt-sync')();
 
 let tarefas = [];
+
 function adicionarTarefa() {
     const tarefa = prompt('Digite uma tarefa a ser adicionada na lista: ');
     const tarefaCapitalizada = tarefa.charAt(0).toUpperCase()+tarefa.slice(1).toLowerCase();
@@ -122,7 +123,7 @@ function menu() {
               break;
           case 7:
               console.log("Projeto desenvolvido por:");
-              console.log("Bruno Souza, Christiane Barbosa, João Marcos, Marília Oliveira e Patrick Farias");
+              console.log("Bruno Lopes, Christiane Barbosa, João Marcos, Marília Oliveira e Patrick Farias");
               console.log('\nFinalizando a aplicação.');
               sair();
               break;
@@ -132,7 +133,7 @@ function menu() {
   }
 }
 console.log('')
-console.log('Bem Vinda(o) a ToDo List do Grupo 2!')
+console.log('Bem Vinda(o) a To Do List do Grupo 2!')
 console.log('');
 adicionarTarefa();
 menu();
