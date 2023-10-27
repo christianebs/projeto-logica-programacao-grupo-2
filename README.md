@@ -39,7 +39,7 @@ Observações:
 
 ## :woman_technologist: :man_technologist: Grupo 2
 
-- Bruno Souza
+- Bruno Lopes
 - Christiane Barbosa
 - João Marcos
 - Marília Oliveira
