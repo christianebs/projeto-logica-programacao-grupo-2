@@ -15,12 +15,9 @@ function adicionarTarefa() {
 }
 
 function editarTarefa() {
-    if (tarefas.length === 0) {
-        console.log("\nNenhuma tarefa disponível para edição. Que tal adicionar uma tarefa?");
+    if(verificarTarefasVazia()){
         return;
     }
-    listarTarefas();
-    console.log("");
     const indexDaTarefa = parseInt(prompt('Digite o número da tarefa que deseja editar: ')) - 1;
     if (indexDaTarefa >= 0 && indexDaTarefa < tarefas.length) {
         console.log("");
@@ -33,12 +30,9 @@ function editarTarefa() {
 }
 
 function removerTarefa() {
-    listarTarefas();
-    if (tarefas.length === 0) {
-        console.log("\nNenhuma tarefa disponível para remoção. Que tal adicionar uma tarefa?");
+    if(verificarTarefasVazia()){
         return;
     }
-    console.log("");
     const indexDaTarefa = parseInt(prompt('Digite o número da tarefa que deseja remover: ')) - 1;
     if (indexDaTarefa >= 0 && indexDaTarefa < tarefas.length) {
         tarefas.splice(indexDaTarefa, 1);
@@ -60,31 +54,39 @@ function listarTarefas() {
 }
 
 function obterId (){
-    if (tarefas.length === 0) {
-        console.log("\nNenhuma tarefa disponível para visualização. Que tal adicionar uma tarefa?");
+    if(verificarTarefasVazia()){
         return;
     }
-
-    listarTarefas();
-    console.log("");
     const indexDaTarefa = parseInt(prompt('Digite o número da tarefa que você quer ver: ')) - 1;
-
     if (indexDaTarefa >= 0 && indexDaTarefa < tarefas.length) {
         console.log('A tarefa solicitada é:');
         console.log(`${tarefas[indexDaTarefa]}`);
     } else {
         console.log("\nTarefa não encontrada, verifique o número da tarefa digitado.");
     }
-
 }
 
 function reiniciarPrograma() {
-  tarefas = [];
-  console.log('\nReiniciando o programa...');
+    console.log('\nReiniciando o programa...');
+    tarefas = [];
+    console.log('');
+    console.log('Bem Vinda(o) a ToDo List do Grupo 2!')
+    adicionarTarefa();
+    menu();
 }
 
 function sair() {
   process.exit(0);
+}
+
+function verificarTarefasVazia(){
+    if (tarefas.length === 0) {
+        console.log("\nNenhuma tarefa disponível na lista de Tarefas. Que tal adicionar uma tarefa?");
+        return true;
+    }
+    listarTarefas();
+    console.log("");
+    return false;
 }
 
 function menu() {
