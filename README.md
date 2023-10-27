@@ -1,6 +1,6 @@
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=christianebs.projeto-logica-programacao-grupo-2) ![GitHub Repo stars](https://img.shields.io/github/stars/christianebs/projeto-logica-programacao-grupo-2) ![GitHub pull requests](https://img.shields.io/github/issues-pr/christianebs/projeto-logica-programacao-grupo-2) ![GitHub closed issues](https://img.shields.io/github/issues-closed/christianebs/projeto-logica-programacao-grupo-2)
 
-# ToDo List Ada Tech
+# To Do List Ada Tech
 
 Projeto desenvolvido em JavaScript com base nos conceitos do módulo 1 de lógica de programação, consiste em uma aplicação de lista de tarefas (ToDo List). Permite ao usuário, através da biblioteca "prompt", adicionar, editar e remover tarefas, além de listar todas as tarefas salvas de maneira organizada. A aplicação também oferece a funcionalidade de obter uma tarefa específica através de um parâmetro, como o ID, proporcionando uma experiência de gerenciamento eficiente e prático.
 
