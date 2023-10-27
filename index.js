@@ -23,14 +23,17 @@ function editarTarefa() {
     if (indexDaTarefa >= 0 && indexDaTarefa < tarefas.length) {
         console.log("");
         const tarefaEditada = prompt('Digite a nova descrição da tarefa: ');
-        tarefas[indexDaTarefa] = tarefaEditada.charAt(0).toUpperCase() + tarefaEditada.slice(1).toLowerCase();;
-        console.log('\nTarefa editada com sucesso!');
-    } else {
-        console.log("\nTarefa não encontrada, verifique o número da tarefa digitado.");
+        const tarefaEditadaCapitalizada = tarefaEditada.charAt(0).toUpperCase() + tarefaEditada.slice(1).toLowerCase();
+        if(!tarefas.includes(tarefaEditadaCapitalizada)){
+            tarefas [indexDaTarefa] = tarefaEditadaCapitalizada;
+            console.log('\nTarefa editada com sucesso!');
+        } else {
+        console.log("\nTarefa já existe na lista. Edição não realizada.");
+        }
+    } else{
+        console.log("\n Tarefa não encontrada, verifique o número da tarefa que deseja editar.");
     }
 }
-
-
 
 function removerTarefa() {
     if(verificarTarefasVazia()){
