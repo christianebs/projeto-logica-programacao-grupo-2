@@ -121,6 +121,8 @@ function menu() {
               reiniciarPrograma();
               break;
           case 7:
+              console.log("Projeto desenvolvido por:");
+              console.log("Bruno Souza, Christiane Barbosa, João Marcos, Marília Oliveira e Patrick Farias");
               console.log('\nFinalizando a aplicação.');
               sair();
               break;
@@ -130,7 +132,7 @@ function menu() {
   }
 }
 console.log('')
-console.log('ToDo List Grupo 2')
+console.log('Bem Vinda(o) a ToDo List do Grupo 2!')
 console.log('');
 adicionarTarefa();
 menu();
