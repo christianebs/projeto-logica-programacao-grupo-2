@@ -24,23 +24,22 @@ Projeto desenvolvido em JavaScript com base nos conceitos do módulo 1 de lógic
 
 ## :computer: Rodando o Projeto
 
+##### 1. Faça o download deste repositório para o seu sistema ou clone o projeto
 ```shell
-# 1. Faça o download deste repositório para o seu sistema ou clone o projeto
-
 git clone https://github.com/christianebs/projeto-logica-programacao-grupo-2
+```
 
-# 2. Instale o pacote prompt-sync
-
+##### 2. Instale o pacote prompt-sync
+Observações:
+```shell
 npm install prompt-sync
 ```
-Observações:
-
-- Antes de executar o programa, certifique-se de que você tenha o Node.js instalado em seu sistema. Você pode baixá-lo em nodejs.org.
+Antes de executar o programa, certifique-se de que você tenha o Node.js instalado em seu sistema. Você pode baixá-lo em [nodejs.org](nodejs.org).
 
 ## :woman_technologist: :man_technologist: Grupo 2
 
-- Bruno Lopes
-- Christiane Barbosa
-- João Marcos
-- Marília Oliveira
-- Patrick farias
+- [Bruno Lopes](https://github.com/brunoLopes-dev) - [Linkedin](https://www.linkedin.com/in/brunolopes-dev/)
+- [Christiane Barbosa](https://github.com/christianebs/) - [Linkedin](https://www.linkedin.com/in/christiane-barbosa/)
+- [João Marcos](https://github.com/joaomcsferreira) - [Linkedin](https://www.linkedin.com/in/joaomcsferreira/)
+- [Marília Oliveira](https://github.com/MariliaPinheiroAlves) - [Linkedin](https://www.linkedin.com/in/mar%C3%ADlia-pinheiro-alves-507885274/)
+- [Patrick Farias](https://github.com/patrickfariaslima) - [Linkedin](https://www.linkedin.com/in/patrickfariaslima/)
